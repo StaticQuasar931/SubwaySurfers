@@ -1,108 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <script src="poki-sdk.js"></script>
+  <!-- Meta & Canonical -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
+  <link rel="canonical" href="https://staticquasar931.github.io/SubwaySurfers/" />
+  <meta name="robots" content="index,follow,max-image-preview:large">
 
-    <meta http-equiv="content-type" content="text/html; charset=UTF8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Title & Core SEO -->
+  <title>Subway Surfers Unblocked | StaticQuasar931</title>
+  <meta name="description" content="Play Subway Surfers unblocked online — the classic endless running game with Jake, Tricky, and Fresh. Free, fullscreen, and school-safe on Chromebook, PC, and mobile. Jump trains, dodge obstacles, and collect coins!" />
+  <meta name="keywords" content="Subway Surfers, Subway Surfers unblocked, play Subway Surfers online, Subway Surfers browser game, endless runner, school-safe games, unblocked games, subway surfers staticquasar931, static 931, staticq, staticq931, subway game unbl0cked" />
+  <meta name="theme-color" content="#0b316b">
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="viewport"
-          content="height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover"/>
-    <meta name="description" content="">
+  <!-- Social / Open Graph -->
+  <meta property="og:title" content="Subway Surfers – Unblocked on StaticQuasar931" />
+  <meta property="og:description" content="Play Subway Surfers unblocked — run, jump, and dodge trains in fullscreen mode on StaticQuasar931." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://staticquasar931.github.io/SubwaySurfers/" />
+  <meta property="og:image" content="https://res.cloudinary.com/dcsrqennd/image/upload/v1758793030/Subway_Surfers_StaticQuasar931_cfdxnv.jpg" />
+  <meta property="og:image:alt" content="Subway Surfers gameplay preview" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="manifest" href="subwaysurfers.webmanifest">
-    <link rel="icon" href="assets/images/app-icon-16.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/app-icon-114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/app-icon-72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/images/app-icon-57.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/images/app-icon-57.png">
+  <!-- App & Icons -->
+  <link rel="manifest" href="subwaysurfers.webmanifest">
+  <link rel="icon" href="assets/images/app-icon-16.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/app-icon-114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/app-icon-72.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/images/app-icon-57.png">
 
-    <title>Subway Surfers Web</title>
-    <style>
-        body, html {
-            margin: 0;
-            height: 100%;
-            background-color: #0b316b;
-            overflow: hidden;
-            background-image: url('assets/preload/splash.png');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+  <!-- Hidden SEO Block -->
+  <style>
+    .seo-hidden {
+      position:absolute;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+      clip:rect(1px,1px,1px,1px);
+      white-space:nowrap;
+    }
+  </style>
 
-        #message {
-            text-align: center;
-            font-size: 8px;
-            z-index: 5;
-            font-family: "Verdana", sans-serif;
-            color: #fff;
-            position: fixed;
-            width: 100%;
-            z-index: 9999;
-        }
-
-        .dot {
-            display: inline;
-            margin-left: 0.2em;
-            margin-right: 0.2em;
-            position: relative;
-            top: -1em;
-            font-size: 3.5em;
-            opacity: 0;
-            animation: showHideDot 2.5s ease-in-out infinite;
-        }
-
-        .dot.one {
-            animation-delay: 0.2s;
-        }
-
-        .dot.two {
-            animation-delay: 0.4s;
-        }
-
-        .dot.three {
-            animation-delay: 0.6s;
-        }
-
-        @keyframes showHideDot {
-            0% {
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            60% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-
-    </style>
+  <!-- Game Style -->
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+      background-color: #0b316b;
+      overflow: hidden;
+      background-image: url('assets/preload/splash.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #message {
+      text-align: center;
+      font-size: 8px;
+      font-family: "Verdana", sans-serif;
+      color: #fff;
+      position: fixed;
+      width: 100%;
+      z-index: 9999;
+    }
+    .dot {
+      display: inline;
+      margin: 0 0.2em;
+      position: relative;
+      top: -1em;
+      font-size: 3.5em;
+      opacity: 0;
+      animation: showHideDot 2.5s ease-in-out infinite;
+    }
+    .dot.one { animation-delay: 0.2s; }
+    .dot.two { animation-delay: 0.4s; }
+    .dot.three { animation-delay: 0.6s; }
+    @keyframes showHideDot {
+      0%, 100% { opacity: 0; }
+      50%, 60% { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-<script>
+  <script src="poki-sdk.js"></script>
+  <script>
     window.NOSW = true;
     window.GAME_CONFIG = {
-        pokiSdkDebug: false,
-        leaderboard: 'mockup',
-        bundlesPath: './bundles',
-    }
-    // https://github.com/pixijs/pixijs/issues/9414
-    delete Array.prototype.group;
-    window.open = function () {
+      pokiSdkDebug: false,
+      leaderboard: 'mockup',
+      bundlesPath: './bundles',
     };
-</script>
-<div id="message">
+    delete Array.prototype.group; // Fix PIXI.js issue
+    window.open = function () {};
+  </script>
+
+  <div id="message">
     <h1>Loading</h1>
     <h1 class="dot one">.</h1>
     <h1 class="dot two">.</h1>
     <h1 class="dot three">.</h1>
-</div>
-<script src="js/loading.js"></script>
-<script src="js/boot.js"></script>
+  </div>
+
+  <script src="js/loading.js"></script>
+  <script src="js/boot.js"></script>
+
+  <!-- Hidden SEO -->
+  <div class="seo-hidden">
+    <h1>Subway Surfers – Unblocked Endless Running Game</h1>
+    <p><strong>Subway Surfers</strong> is a high-speed endless runner game where you outrun the Inspector and his dog through subway tracks. Play the <strong>unblocked version</strong> directly in your browser — no downloads, fully free, and school-safe on <strong>StaticQuasar931</strong>.</p>
+    <ul>
+      <li>🏃‍♂️ Run, jump, and dodge trains and barriers</li>
+      <li>🌍 Explore iconic city maps and collect power-ups</li>
+      <li>💻 Chromebook and PC compatible</li>
+      <li>⭐ Free to play — no restrictions or installs</li>
+    </ul>
+    <p>Keywords: Subway Surfers unblocked, Subway Surfers school version, Subway Surfers staticquasar931, unbl0cked subway game, endless runner unblocked, play Subway Surfers on Chromebook, 931 games.</p>
+  </div>
+
+  <script>
+    // Standard leave warning
+    window.onbeforeunload = () => "Are you sure you want to leave? Your run will reset.";
+  </script>
 </body>
 </html>
